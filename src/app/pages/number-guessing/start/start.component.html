@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="col-md-8 text-center border p-3">
+    <button class="btn btn-success mb-2" (click)="onStart()" [disabled]="disableStart">Start</button>
+    <hr />
+    <div [hidden]="isHidden">
+      <button class="btn btn-primary me-2" (click)="onGuessNumber()" >
+        Click
+      </button>
+      <input type="number" #inputGuessedNum />
+    </div>
+  </div>
+</div>

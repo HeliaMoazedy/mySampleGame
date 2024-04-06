@@ -1,0 +1,10 @@
+<app-scores
+  [easyScore]="easyScore"
+  [hardScore]="hardScore"
+  [mediumScore]="mediumScore"
+  [hidden]="isHidden"
+></app-scores>
+<app-choose-level
+  (levelSelected)="handleLevelSelected($event)"
+></app-choose-level>
+<app-start (guessedNumber)="checkNumber($event)"></app-start>
